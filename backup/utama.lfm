@@ -1,0 +1,469 @@
+object FormUtama: TFormUtama
+  Left = 744
+  Height = 802
+  Top = 117
+  Width = 1160
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'UAS Pengolahan Citra Digital'
+  ClientHeight = 802
+  ClientWidth = 1160
+  LCLVersion = '2.0.10.0'
+  object ButtonGambar1: TButton
+    Left = 16
+    Height = 50
+    Top = 56
+    Width = 550
+    Caption = '[1] Input Gambar 1'
+    OnClick = ButtonGambar1Click
+    TabOrder = 0
+  end
+  object ButtonGambar2: TButton
+    Left = 592
+    Height = 50
+    Top = 56
+    Width = 550
+    Caption = '[2] Input Gambar 2'
+    OnClick = ButtonGambar2Click
+    TabOrder = 1
+  end
+  object ButtonProses: TButton
+    Left = 16
+    Height = 50
+    Top = 744
+    Width = 550
+    Caption = '[3] Mulai Proses'
+    Enabled = False
+    OnClick = ButtonProsesClick
+    TabOrder = 2
+  end
+  object ButtonSimpan: TButton
+    Left = 592
+    Height = 50
+    Top = 744
+    Width = 550
+    Caption = '[4] Simpan Hasil Proses'
+    Enabled = False
+    OnClick = ButtonSimpanClick
+    TabOrder = 3
+  end
+  object ScrollBox1: TScrollBox
+    Left = 16
+    Height = 300
+    Top = 112
+    Width = 550
+    HorzScrollBar.Page = 200
+    VertScrollBar.Page = 200
+    ClientHeight = 296
+    ClientWidth = 546
+    TabOrder = 4
+    object Image1: TImage
+      Left = 0
+      Height = 200
+      Top = 0
+      Width = 200
+      AutoSize = True
+    end
+  end
+  object ScrollBox2: TScrollBox
+    Left = 592
+    Height = 300
+    Top = 112
+    Width = 550
+    HorzScrollBar.Page = 200
+    VertScrollBar.Page = 200
+    ClientHeight = 296
+    ClientWidth = 546
+    TabOrder = 5
+    object Image2: TImage
+      Left = 0
+      Height = 200
+      Top = 0
+      Width = 200
+      AutoSize = True
+    end
+  end
+  object ScrollBox3: TScrollBox
+    Left = 16
+    Height = 300
+    Top = 432
+    Width = 550
+    HorzScrollBar.Page = 200
+    VertScrollBar.Page = 200
+    ClientHeight = 296
+    ClientWidth = 546
+    TabOrder = 6
+    object Image3: TImage
+      Left = 0
+      Height = 200
+      Top = 0
+      Width = 200
+      AutoSize = True
+    end
+  end
+  object Title: TLabel
+    Left = 248
+    Height = 29
+    Top = 8
+    Width = 661
+    AutoSize = False
+    Caption = 'Program Pemrosesan Dua Buah Citra Menjadi Satu Buah Ornamen'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = 29
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    WordWrap = True
+  end
+  object Label1: TLabel
+    Left = 845
+    Height = 21
+    Top = 432
+    Width = 156
+    Caption = 'Anggota Kelompok :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 845
+    Height = 17
+    Top = 464
+    Width = 297
+    Caption = '[1] Rivaltino Arron <32180050> - Ketua Kelompok'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 845
+    Height = 17
+    Top = 488
+    Width = 248
+    Caption = '[2] Andreanto Suryadi Liman <32180051>'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 845
+    Height = 17
+    Top = 512
+    Width = 196
+    Caption = '[3] Asvian Sulaeman <32180126>'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 845
+    Height = 17
+    Top = 536
+    Width = 204
+    Caption = '[4] Nathanael Akhaya <32180128>'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 845
+    Height = 17
+    Top = 560
+    Width = 134
+    Caption = '[5] Steven <32180137>'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 592
+    Height = 21
+    Top = 432
+    Width = 213
+    Caption = 'Cara Penggunaan Program :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 592
+    Height = 17
+    Top = 464
+    Width = 185
+    Caption = '[1] Input Gambar ke-1 (bitmap)'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 592
+    Height = 17
+    Top = 488
+    Width = 189
+    Caption = '[2] Input Gambar ke-2 (bitmap)'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 592
+    Height = 17
+    Top = 512
+    Width = 181
+    Caption = '[3] Klik tombol "Mulai Proses"'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 592
+    Height = 17
+    Top = 536
+    Width = 195
+    Caption = '[4] Hasil proses akan tampil, lalu'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label12: TLabel
+    Left = 592
+    Height = 17
+    Top = 560
+    Width = 190
+    Caption = 'untuk menyimpan hasil proses,'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label13: TLabel
+    Left = 592
+    Height = 17
+    Top = 584
+    Width = 206
+    Caption = 'klik tombol "Simpan Hasil Proses"'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label14: TLabel
+    Left = 845
+    Height = 17
+    Top = 672
+    Width = 80
+    Caption = 'Kelas: 5MTI51'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label15: TLabel
+    Left = 845
+    Height = 17
+    Top = 696
+    Width = 264
+    Caption = 'Dosen: Felliks F. Tampinongkol, S.Si., M.Kom'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label16: TLabel
+    Left = 592
+    Height = 21
+    Top = 616
+    Width = 177
+    Caption = 'Filter Yang Digunakan :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label18: TLabel
+    Left = 592
+    Height = 17
+    Top = 696
+    Width = 76
+    Caption = '[3] Grayscale'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label19: TLabel
+    Left = 592
+    Height = 17
+    Top = 672
+    Width = 56
+    Caption = '[2] Invers'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label20: TLabel
+    Left = 592
+    Height = 17
+    Top = 648
+    Width = 187
+    Caption = '[1] Edge Detection (Laplacian 2)'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label17: TLabel
+    Left = 845
+    Height = 21
+    Top = 616
+    Width = 125
+    Caption = 'Informasi Kelas :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label21: TLabel
+    Left = 845
+    Height = 17
+    Top = 648
+    Width = 270
+    Caption = 'Mata Kuliah: TIF23 - Pengolahan Citra Digital'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object OpenPicture1: TOpenPictureDialog
+    Left = 48
+    Top = 120
+  end
+  object SavePicture: TSavePictureDialog
+    Left = 48
+    Top = 440
+  end
+  object OpenPicture2: TOpenPictureDialog
+    Left = 624
+    Top = 120
+  end
+end
